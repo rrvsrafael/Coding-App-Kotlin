@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">create-android-kotlin-app</string>
+    <string name="repo_bottom_text">stargazers: %1$d forks: %2$d</string>
+</resources>

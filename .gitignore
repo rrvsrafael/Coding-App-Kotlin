@@ -1,3 +1,13 @@
+.gradle
+/.idea
+/local.properties
+/build
+/captures
+.DS_Store
+*.iml
+*.apk
+*.jobf
+
 # Compiled class file
 *.class
 
