@@ -31,16 +31,16 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+                R.id.navigation_home, R.id.navigation_maps, R.id.navigation_history
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        testeCospeClima()
+        getWeather()
     }
 
-    private fun testeCospeClima() {
+    private fun getWeather() {
         val lat = 11.0
         val lon = 12.0
 
@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 
                 override fun onFailure(call: Call<OpenWeatherMapData?>, t: Throwable) {
                     val tvCentral = findViewById<TextView>(R.id.tvCentral)
-                    tvCentral.text = "Deu merda"
+                    tvCentral.text = "Error getting weather details at OpenWeatherMapData"
                 }
             }
         )
