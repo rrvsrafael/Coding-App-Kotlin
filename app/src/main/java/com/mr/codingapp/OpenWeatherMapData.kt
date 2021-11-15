@@ -25,10 +25,6 @@ data class Weather (
 
 @Generated("jsonschema2pojo")
 data class Main(
-//    @SerializedName("dt")
-//    @Expose
-//    var dt: Int?,
-
     @SerializedName("temp")
     @Expose
     var temp: Double?,
@@ -67,8 +63,8 @@ data class OpenWeatherMapData (
     @SerializedName("main")
     @Expose
     var main: Main?,
-//
-//    @SerializedName("weather")
-//    @Expose
-//    var weather: Weather?,
+
+    @SerializedName("weather")
+    @Expose
+    var weather: List<Weather>?,
 )

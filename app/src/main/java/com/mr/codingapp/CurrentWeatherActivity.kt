@@ -29,12 +29,6 @@ class CurrentWeatherActivity : AppCompatActivity(), LocationListener {
 
 //        val iconUrl = "https://openweathermap.org/img/wn/${icon}@4x.png";
 
-        val weatherIcon = findViewById<View>(R.id.weather_icon) as ImageView
-
-        Glide.with(this)
-            .load("https://openweathermap.org/img/wn/01n@4x.png")
-            .into(weatherIcon)
-
         val btBack = findViewById<ImageButton>(R.id.weathernow_back_button)
 
         btBack.setOnClickListener {
@@ -63,11 +57,18 @@ class CurrentWeatherActivity : AppCompatActivity(), LocationListener {
                 ) {
                     val cityName = findViewById<TextView>(R.id.city_name)
                     cityName.text = response.body()?.cityName
+
+                    //Icon
+                    val weatherIcon = findViewById<View>(R.id.weather_icon) as ImageView
+                    Glide.with(this@CurrentWeatherActivity)
+                        .load("https://openweathermap.org/img/wn/%s@4x.png".format(response.body()?.weather?.get(0)?.icon))
+                        .into(weatherIcon)
                 }
 
                 override fun onFailure(call: Call<OpenWeatherMapData?>, t: Throwable) {
                     val cityName = findViewById<TextView>(R.id.city_name)
                     cityName.text = "Error getting weather details at OpenWeatherMapData"
+                    throw t
                 }
             }
         )
