@@ -13,9 +13,9 @@ class CoursesActivity : AppCompatActivity(){
         this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         supportActionBar?.hide()
 
-        setContentView(R.layout.activity_welcome_list)
+        setContentView(R.layout.activity_courses)
 
-        val btBack = findViewById<ImageButton>(R.id.maps_back_button)
+        val btBack = findViewById<ImageButton>(R.id.courses_back_button)
 
         btBack.setOnClickListener {
             finish()

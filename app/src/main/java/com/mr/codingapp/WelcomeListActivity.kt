@@ -18,6 +18,7 @@ class WelcomeListActivity : AppCompatActivity() {
 
         val btCourses = findViewById<Button>(R.id.courses_button)
         val btMaps = findViewById<Button>(R.id.maps_button)
+        val btCurrentWeather = findViewById<Button>(R.id.weathernow_button)
 
         btCourses.setOnClickListener {
             val coursesActivityIntent = Intent(this, CoursesActivity::class.java)
@@ -27,6 +28,11 @@ class WelcomeListActivity : AppCompatActivity() {
         btMaps.setOnClickListener {
             val mapsActivityIntent = Intent(this, MapsActivity::class.java)
             startActivity(mapsActivityIntent)
+        }
+
+        btCurrentWeather.setOnClickListener {
+            val currentWeatherIntent = Intent(this, CurrentWeatherActivity::class.java)
+            startActivity(currentWeatherIntent)
         }
     }
 }

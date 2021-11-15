@@ -24,10 +24,10 @@ data class Weather (
 )
 
 @Generated("jsonschema2pojo")
-data class Current(
-    @SerializedName("dt")
-    @Expose
-    var dt: Int?,
+data class Main(
+//    @SerializedName("dt")
+//    @Expose
+//    var dt: Int?,
 
     @SerializedName("temp")
     @Expose
@@ -44,14 +44,6 @@ data class Current(
     @SerializedName("humidity")
     @Expose
     var humidity: Int?,
-
-    @SerializedName("wind_speed")
-    @Expose
-    var windSpeed: Double?,
-
-    @SerializedName("weather")
-    @Expose
-    var weather: List<Weather>?,
 )
 
 @Generated("jsonschema2pojo")
@@ -64,7 +56,19 @@ data class OpenWeatherMapData (
     @Expose
     var timezoneOffset: Int?,
 
-    @SerializedName("current")
+    @SerializedName("name")
     @Expose
-    var current: Current?,
+    var cityName: String?,
+
+    @SerializedName("dt")
+    @Expose
+    var dt: Long?,
+
+    @SerializedName("main")
+    @Expose
+    var main: Main?,
+//
+//    @SerializedName("weather")
+//    @Expose
+//    var weather: Weather?,
 )
