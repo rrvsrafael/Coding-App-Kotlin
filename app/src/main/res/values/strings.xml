@@ -10,4 +10,10 @@
     <string name="google_maps_string">Google Maps</string>
     <string name="content_botao_voltar">botao de voltar</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="city">City</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="description">Description</string>
+    <string name="weather_icon">Weather icon</string>
+    <string name="string_weather_icon" />
 </resources>
