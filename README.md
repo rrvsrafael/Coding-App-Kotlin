@@ -1,3 +1,5 @@
+## Coding App
+
 Coding App é um aplicativo extremamente versátil desenvolvido utilizando Kotlin.
 
 ## Demo + APK
@@ -12,7 +14,7 @@ Coding App é um aplicativo extremamente versátil desenvolvido utilizando Kotli
 - [ ] A aplicação deve salvar os dados do OpenWeatherMap e permitir visualização dos dados salvos no passado
 - [x] A aplicação deve receber notificações utilizando o Firebase
 - [x] A aplicação deve ter uma tela com o Google Maps mostrando a posição atual
-- [ ] Vídeo apresentando a aplicação e o uso da mesma
+- [X] Vídeo apresentando a aplicação e o uso da mesma
 
 Pull requests are more than welcomed!
 
