@@ -1,10 +1,8 @@
-![Coding App](https://dl.dropboxusercontent.com/s/0rq3fr0dtpvwd4h/NSGIF-header.png?dl=0)
-
 Coding App é um aplicativo extremamente versátil desenvolvido utilizando Kotlin.
 
-## Demo
+## Demo + APK
 
-![Coding App Demo](https://dl.dropboxusercontent.com/s/p02c6l7rzk6mf6m/NSGIF-HT.gif?dl=0)
+[Coding App Demo](https://drive.google.com/drive/folders/1-1-26tPKqea70ZyosSY7MJuG9kKW-vnN?usp=sharing)
 
 ## Todo
 
