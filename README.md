@@ -10,7 +10,7 @@ Coding App é um aplicativo extremamente versátil desenvolvido utilizando Kotli
 
 - [x] A aplicação deve ter login com Google ou Facebook
 - [x] A aplicação deve ter no mínimo três Telas
-- [ ] A aplicação deve seguir o modelo escolhido, mas deve acrescentar dados do OpenWeatherMap.org em algum lugar
+- [X] A aplicação deve seguir o modelo escolhido, mas deve acrescentar dados do OpenWeatherMap.org em algum lugar
 - [ ] A aplicação deve salvar os dados do OpenWeatherMap e permitir visualização dos dados salvos no passado
 - [x] A aplicação deve receber notificações utilizando o Firebase
 - [x] A aplicação deve ter uma tela com o Google Maps mostrando a posição atual
