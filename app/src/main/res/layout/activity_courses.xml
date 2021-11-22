@@ -27,11 +27,236 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="686dp"
-        android:layout_marginTop="1dp"
-        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/base_course1"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/retangulo" />
+
+            <ImageView
+                android:id="@+id/logo_course1"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="@+id/base_course1"
+                app:layout_constraintEnd_toEndOf="@+id/base_course1"
+                app:layout_constraintTop_toTopOf="@+id/base_course1"
+                app:srcCompat="@drawable/python" />
+
+            <TextView
+                android:id="@+id/text_course1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/python_tutorial_nfor_beginners"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/base_course1"
+                app:layout_constraintTop_toTopOf="@+id/base_course1" />
+
+            <ImageView
+                android:id="@+id/circle_course1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/base_course1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_course1"
+                app:srcCompat="@drawable/circulo" />
+
+            <ImageView
+                android:id="@+id/play_course1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/circle_course1"
+                app:layout_constraintEnd_toEndOf="@+id/circle_course1"
+                app:layout_constraintStart_toStartOf="@+id/circle_course1"
+                app:layout_constraintTop_toTopOf="@+id/circle_course1"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+            <TextView
+                android:id="@+id/text_watch_course1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/watch_python_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/base_course1"
+                app:layout_constraintStart_toEndOf="@+id/circle_course1"
+                app:layout_constraintTop_toBottomOf="@+id/text_course1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/base_course2"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="21dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/retangulo" />
+
+            <ImageView
+                android:id="@+id/logo_course2"
+                android:layout_width="82dp"
+                android:layout_height="77dp"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="@+id/base_course2"
+                app:layout_constraintEnd_toEndOf="@+id/base_course2"
+                app:layout_constraintTop_toTopOf="@+id/base_course2"
+                app:srcCompat="@drawable/programming_course" />
+
+            <TextView
+                android:id="@+id/text_course2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/php_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/base_course2"
+                app:layout_constraintTop_toTopOf="@+id/base_course2" />
+
+            <ImageView
+                android:id="@+id/circle_course2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/base_course2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_course2"
+                app:srcCompat="@drawable/circulo" />
+
+            <ImageView
+                android:id="@+id/play_course2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/circle_course2"
+                app:layout_constraintEnd_toEndOf="@+id/circle_course2"
+                app:layout_constraintStart_toStartOf="@+id/circle_course2"
+                app:layout_constraintTop_toTopOf="@+id/circle_course2"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+            <TextView
+                android:id="@+id/text_watch_course2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/_20_lessons"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBottom_toBottomOf="@+id/base_course2"
+                app:layout_constraintStart_toEndOf="@+id/circle_course2"
+                app:layout_constraintTop_toBottomOf="@+id/text_course2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/base_course3"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="21dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/retangulo" />
+
+            <ImageView
+                android:id="@+id/logo_course3"
+                android:layout_width="89dp"
+                android:layout_height="83dp"
+                android:layout_marginEnd="28dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="@+id/base_course3"
+                app:layout_constraintEnd_toEndOf="@+id/base_course3"
+                app:layout_constraintTop_toTopOf="@+id/base_course3"
+                app:srcCompat="@drawable/online_course" />
+
+            <TextView
+                android:id="@+id/text_course3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/html5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/base_course3"
+                app:layout_constraintTop_toTopOf="@+id/base_course3" />
+
+            <ImageView
+                android:id="@+id/circle_course3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/base_course3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_course3"
+                app:srcCompat="@drawable/circulo" />
+
+            <ImageView
+                android:id="@+id/play_course3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/circle_course3"
+                app:layout_constraintEnd_toEndOf="@+id/circle_course3"
+                app:layout_constraintStart_toStartOf="@+id/circle_course3"
+                app:layout_constraintTop_toTopOf="@+id/circle_course3"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+            <TextView
+                android:id="@+id/text_watch_course3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/_15_lessons"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBottom_toBottomOf="@+id/base_course3"
+                app:layout_constraintStart_toEndOf="@+id/circle_course3"
+                app:layout_constraintTop_toBottomOf="@+id/text_course3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
