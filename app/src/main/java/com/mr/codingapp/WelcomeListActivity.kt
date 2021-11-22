@@ -85,6 +85,10 @@ class WelcomeListActivity : AppCompatActivity() {
                 val acct = GoogleSignIn.getLastSignedInAccount(this)
                 val personName = acct.displayName
                 Toast.makeText(this, "Welcome, $personName", Toast.LENGTH_SHORT).show()
+                val btSignIn = findViewById<Button>(R.id.Signin)
+                btSignIn.isEnabled = false
+                btSignIn.isClickable = false
+                btSignIn.visibility = View.INVISIBLE
             }
         } catch (e: ApiException) {
             Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show()
