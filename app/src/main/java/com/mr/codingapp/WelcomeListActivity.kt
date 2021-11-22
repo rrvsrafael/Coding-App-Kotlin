@@ -81,14 +81,14 @@ class WelcomeListActivity : AppCompatActivity() {
         try {
             val account: GoogleSignInAccount? = completedTask.getResult(ApiException::class.java)
             if (account != null) {
-                val btSignIn = findViewById<Button>(R.id.Signin)
-                btSignIn.isEnabled = false
-                btSignIn.isClickable = false
-                btSignIn.visibility = View.INVISIBLE
                 Toast.makeText(this, "Successfully logged in.", Toast.LENGTH_SHORT).show()
                 val acct = GoogleSignIn.getLastSignedInAccount(this)
                 val personName = acct.displayName
                 Toast.makeText(this, "Welcome, $personName", Toast.LENGTH_SHORT).show()
+                val btSignIn = findViewById<Button>(R.id.Signin)
+                btSignIn.isEnabled = false
+                btSignIn.isClickable = false
+                btSignIn.visibility = View.INVISIBLE
             }
         } catch (e: ApiException) {
             Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show()
