@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "93761737078",
+    "project_id": "mr-coding-app",
+    "storage_bucket": "mr-coding-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93761737078:android:cc5b6f1a0f3516d494aa57",
+        "android_client_info": {
+          "package_name": "com.mr.codingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93761737078-kgtka5r3trf0i91j9rpfgomd8ff3mqu4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwsfBeU9lxW6HYh7YHUXocV9Eu7v9BONE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93761737078-kgtka5r3trf0i91j9rpfgomd8ff3mqu4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
