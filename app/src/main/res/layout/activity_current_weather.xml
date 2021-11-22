@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/retangulo_clima" />
+        app:srcCompat="@drawable/retangulo" />
 
     <ImageView
         android:id="@+id/weathernow_icon"
